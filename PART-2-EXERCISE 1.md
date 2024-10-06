@@ -2,9 +2,11 @@
 
 ## What is the result when “nums = [1, 2]”
 Here, the avg function calculates the mean of the array elements. The sum calculation is equal to 1 + 2 = 3, but as the Array size is 2 and an integer division is occurring, such that 3 ÷ 2, the result ends up being 1 because the fractional part is discarded. Then, a type conversion takes place whereby 1 is cast to a float, giving a final result of 1.0.
-What is the result with “empty nums array”
+
+## What is the result with “empty nums array”
 When nums is empty, the avg function detects the empty array and so an exception is thrown. In main, the exception is caught but not handled, meaning that result remains uninitialized. If result is an object type, it will be null. If it is a primitive type, it will have a default value. An example for a float would be 0.0 as a default value.
-What is my proposed solution?
+
+## what is my proposed solution?
 I would modify the avg function to handle non-negative numbers exclusively, that is to only accept  arrays with non-negative integers (x ≥ 0). For arrays that do not meet these requirements (so containing negative numbers), the function should identify all indices with negative values and report these indices to the caller.
 
 ## Potential implementation
