@@ -1,4 +1,4 @@
-# EXERCISE 2: Printer exercise
+# EXERCISE 2: Error handling, exceptions and printer exercise
 
 ## PART A
 Inheritance and polymorphism principles are employed in this code in the ways that the exception classes are organised (also know as exception hierarchy) and the ways in which they are handled (exception handling).
