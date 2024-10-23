@@ -1,7 +1,9 @@
 # EXERCISE 3: Shapes and operations
 
 ## DESIGN DESCRIPTION
-To address the issues in the provided program and make it more maintainable, extensible, and aligned with object-oriented principles, we can refactor the code using inheritance, polymorphism, and encapsulation.  We can create an abstract base class Shape that defines the common behaviour for all shapes. The class will include abstract methods for operations like area() and boundaries(). We can then create specific and concrete classes for each shape (Triangle, Rectangle, Circle) that extend Shape and each class will implement the abstract methods from Shape. In other words, each specific shape class will encapsulate the data and behaviour of the abstract base class. We could use polymorphism to treat all shapes in the same way. This allows us to store different shapes in a single collection and perform operations without knowing the exact type of shape.
+To address the issues in the provided program and make it more maintainable, extensible, and aligned with object-oriented principles, we can refactor the code using inheritance, polymorphism, and encapsulation.  We can create an abstract base class Shape that defines the common behaviour for all shapes. The class will include abstract methods for operations like area() and boundaries(). 
+
+We can then create specific and concrete classes for each shape (Triangle, Rectangle, Circle) that extend Shape and each class will implement the abstract methods from Shape. In other words, each specific shape class will encapsulate the data and behaviour of the abstract base class. We could use polymorphism to treat all shapes in the same way. This allows us to store different shapes in a single collection and perform operations without knowing the exact type of shape.
 
 ## IMPLEMENTATION
 
