@@ -4,9 +4,9 @@
 Inheritance and polymorphism principles are employed in this code in the ways that the exception classes are organised (also know as exception hierarchy) and the ways in which they are handled (exception handling).
 * Inheritance principles are employed in the exception hierarchy: “Problem” is an abstract class that extends “Exception”. Being abstract means that we can't create instances of Problem directly, but other classes can inherit from it. This is exactly what happens with “WeirdProblem” and “TrickyProblem”, as both of these classes extend Problem, meaning they inherit from “Problem” and are considered more specific types of “Problem”.
 * Polymorphism is employed in the exception handling blocks, meaning that this program can handle different types of errors in a flexible way. The catch Blocks that are implemented throughout are like safety nets that catch specific types of errors when they happen. More specifically:
-** The program first tries to catch WeirdProblem specifically.
-** If it's not that, it tries to catch TrickyProblem.
-** If it's neither, it then catches a general Problem (which includes both of the abovementioned types).
+  * The program first tries to catch WeirdProblem specifically.
+  * If it's not that, it tries to catch TrickyProblem.
+  * If it's neither, it then catches a general Problem (which includes both of the abovementioned types).
 
 This shows polymorphism because the program can treat a “WeirdProblem” either as itself or as a more general Problem. The catch blocks act like filters that handle different error types, from the most specific to the most general. This makes the program flexible, allowing it to respond flexibly to each type of problem.
 
