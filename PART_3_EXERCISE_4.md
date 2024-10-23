@@ -4,9 +4,9 @@
 The most suitable class construction for these requirements would be a Java record, for the following reasons:
 * Immutability: records don’t let you change their data once they’re created. This is good for making sure the data stays consistent.
 * Features that make the code more concise: records automatically create useful methods like:
-** equals(): which checks if two records are the same.
-** hashCode(): which helps store records in data structures like hash maps.
-** toString(): which turns the record into a readable string .
+  * equals(): which checks if two records are the same.
+  * hashCode(): which helps store records in data structures like hash maps.
+  * toString(): which turns the record into a readable string .
 Given the above, a record can easily store both the temperature value (like 20.0) and the scale (like Celsius or Fahrenheit).
 
 I would not use:
