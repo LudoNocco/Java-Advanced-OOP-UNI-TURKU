@@ -2,7 +2,7 @@
 
 ## PART A 
 This is a case of single implementation inheritance.
-The class LoginScreen extends the abstract class CommandLineApp and via specialization inheritance, it inherits its methods and properties. 
+The class LoginScreen extends the abstract class CommandLineApp and via specialisation inheritance, it inherits its methods and properties. 
 It is also a more detailed and specific version of CommandLineApp, adding specialised behaviour by using the lock() method. 
 This method is a simple authentication mechanism that works by continuously prompting the user for a username and password until the correct combination of user name and password is entered. 
 
@@ -46,7 +46,7 @@ This code works for two main reasons linked to “covariant return types” and 
 * Method overriding: as mentioned above, the generate() method in RandomIntegerGenerator replaces the version from RandomGenerator (the parent class). This means that when you call generate() on an object of RandomIntegerGenerator, it will use the version that returns an Integer, even though the original method in the parent class is set to return an Object.
 ### BENEFITS AND DRAWBACKS
 #### Benefits:
-The main benefits lie in providing “type safety” and “specialization”. As for type safety, it means that we can work with more specific integer types without the need for casting. As for specialisation, the child class RandomIntegerGenerator provides us with a more specialised version of the generate() method.
+The main benefits lie in providing “type safety” and “specialisation”. As for type safety, it means that we can work with more specific integer types without the need for casting. As for specialisation, the child class RandomIntegerGenerator provides us with a more specialised version of the generate() method.
 #### Drawbacks:
 I think that the code poses a limitation in terms of polymorphism. polymorphism makes you give up the more precise behaviour of the child class (RandomIntegerGenerator) and forces you to interact with it as if it were the more general parent class (RandomGenerator). This reduces the convenience and type safety that you would otherwise have by using RandomIntegerGenerator directly. 
 Imagine you have a class called RandomIntegerGenerator that has a generate() method. This method is meant to give you an Integer directly. However, if you treat that same RandomIntegerGenerator object like it’s just a RandomGenerator (or in other words you use it through a reference of type RandomGenerator); then when you call generate(), Java thinks it’s supposed to give you an Object instead of an Integer.
